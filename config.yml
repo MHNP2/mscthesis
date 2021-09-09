@@ -1,0 +1,52 @@
+mac:
+  seed: 11
+  wandb: none
+  group: MAC
+  batch_size: 64
+  epochs: 20
+  lr: 0.0001
+  classes: 28
+  model: mac
+  emb_dim: 300
+  d_model: 512
+  max_step: 12
+  self_attention: False
+  memory_gate: False
+  dropout: 0.15
+  decay: 0.999
+  train_proportion: 1.0
+  gradient_clip: 0.0
+  r_alpha: 1.0
+  c_alpha: 1.0
+  w_alpha: 1.0
+  patience: 3
+  alpha: none
+
+
+lcgn:
+  seed: 11
+  wandb: none
+  group: LCGN
+  batch_size: 128
+  epochs: 25
+  model: lcgn
+  gradient_clip: 8.0
+  train_proportion: 1.0
+  emb_dim: 300
+  d_model: 512
+  img_feats: 1152
+  max_step: 4
+  pe_dim: 128
+  stemDropout: 1.0
+  readDropout: 0.85
+  memoryDropout: 0.85 
+  encInputDropout: 0.8
+  outputDropout: 0.85
+  qDropout: 0.92
+  lr: 0.0003
+  decay: 0.999
+  txt_alpha: 1.0
+  msg_alpha: 1.0
+  patience: 3
+  alpha: none
+
